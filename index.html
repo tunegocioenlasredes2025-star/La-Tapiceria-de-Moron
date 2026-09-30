@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>La Tapicería de Morón · Tapizado de autos, motos y sillas</title>
+<meta name="description" content="Tapizado de butacas y asientos de auto, asientos de moto y sillas. Av. Hipólito Yrigoyen 95, Morón. Mandá una foto por WhatsApp y te pasan el presupuesto.">
+<meta name="theme-color" content="#15181C">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* pipeteados de la foto del frente (Yrigoyen 95): el negro del local y el
+     blanco gastado de las letras pintadas */
+  --carbon:#15181C;      /* la persiana y la pared del frente */
+  --carbon-2:#242930;
+  --carbon-3:#3D3E3C;    /* la franja iluminada bajo el cartel */
+  --hueso:#F1EEE8;       /* las letras "LTM" y "LA TAPICERIA DE MORON" */
+  --hueso-2:#E3DED5;
+  --papel:#FAF8F4;
+  --tinta:#15181C;
+  --tinta-2:#4A4F56;
+  --gris:#7C838B;
+  --linea:#DCD6CB;
+  --wa:#1FA855;          /* el unico color del frente: el icono de WhatsApp */
+  --wa-claro:#E7F5EC;
+  --r:6px;
+  --ancho:1080px;
+  --f:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--papel);color:var(--tinta);font-family:var(--f);font-size:16px;line-height:1.5;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+.caja{width:100%;max-width:var(--ancho);margin:0 auto;padding:0 18px}
+section{padding:48px 0}
+h1,h2,h3{line-height:1.04;font-weight:900;letter-spacing:-.02em}
+h1{font-size:clamp(30px,8vw,52px);text-transform:uppercase;letter-spacing:-.015em}
+h2{font-size:clamp(24px,6.2vw,36px);text-transform:uppercase;letter-spacing:-.01em}
+h3{font-size:17.5px;font-weight:800;letter-spacing:-.01em}
+p{text-wrap:pretty}
+.rotulo{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;
+  letter-spacing:.17em;text-transform:uppercase;color:var(--tinta-2);
+  border:1px solid var(--linea);border-radius:3px;padding:6px 11px;margin-bottom:14px;background:#fff}
+.rotulo::before{content:"";width:7px;height:7px;background:var(--carbon);flex:none}
+.sub{color:var(--gris);font-size:15.5px;margin-top:12px;max-width:56ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:15px 19px;border-radius:var(--r);font-size:15px;font-weight:800;
+  border:2px solid transparent;cursor:pointer;line-height:1;font-family:inherit}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-neg{background:var(--carbon);color:var(--hueso)}
+.btn-linea{border-color:var(--carbon);color:var(--tinta);background:transparent}
+.btn-chico{padding:10px 14px;font-size:14px}
+.btn:focus-visible{outline:3px solid var(--wa);outline-offset:3px}
+
+/* ---------- barra ---------- */
+.top{position:sticky;top:0;z-index:40;background:rgba(250,248,244,.95);backdrop-filter:blur(9px);border-bottom:1px solid var(--linea)}
+.top .caja{display:flex;align-items:center;gap:12px;height:62px}
+.marca{display:flex;align-items:center;gap:11px;margin-right:auto;min-width:0}
+.iso{width:38px;height:38px;flex:none}
+.marca b{font-size:14.5px;font-weight:900;letter-spacing:.01em;line-height:1.1;display:block;text-transform:uppercase}
+.marca small{display:block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--gris);font-weight:700;margin-top:2px}
+.solo-gr{display:none}
+@media(min-width:780px){.solo-gr{display:inline-flex}}
+
+/* ---------- portada ---------- */
+.hero{padding:38px 0 0;position:relative}
+.hero h1 em{font-style:normal;display:inline-block;background:var(--carbon);color:var(--hueso);padding:0 .14em .06em}
+.hero .bajada{color:var(--tinta-2);font-size:16.5px;margin-top:16px;max-width:44ch;font-weight:500}
+.sellos{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.sello{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--linea);
+  border-radius:3px;padding:8px 12px;font-size:13.5px;font-weight:700}
+.sello svg{width:16px;height:16px;flex:none}
+.sello .estrella{color:#E0A400}
+.sello b{color:var(--tinta)}
+.sello span{color:var(--gris);font-weight:600}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.acciones .btn{flex:1 1 190px}
+.hero-foto{margin-top:30px;position:relative}
+.hero-foto img{width:100%;border-radius:var(--r)}
+.hero-foto .pie-foto{display:block;margin-top:9px;font-size:12px;color:var(--gris);font-weight:600}
+@media(min-width:920px){
+  .hero{padding-bottom:10px}
+  .hero .caja{display:grid;grid-template-columns:1fr .92fr;gap:44px;align-items:center}
+  .hero-foto{margin-top:0}
+}
+
+/* ---------- que tapizamos ---------- */
+.items{display:grid;gap:0;margin-top:26px;border-top:2px solid var(--carbon)}
+.item{padding:24px 0;border-bottom:1px solid var(--linea);display:grid;gap:14px;align-items:start}
+@media(min-width:720px){.item{grid-template-columns:58px 200px 1fr;gap:24px;align-items:center}}
+.item .ico{width:52px;height:52px;border:2px solid var(--carbon);border-radius:var(--r);
+  display:grid;place-items:center;color:var(--carbon);flex:none}
+.item .ico svg{width:26px;height:26px}
+.item p{color:var(--gris);font-size:14.5px}
+
+/* ---------- el bloque de la foto por whatsapp ---------- */
+.foto-wa{background:var(--carbon);color:var(--hueso);border-radius:var(--r);padding:30px 22px;margin-top:34px}
+.foto-wa h2{color:var(--hueso)}
+.foto-wa .sub{color:#A9AFB6;max-width:50ch}
+.pasos{display:grid;gap:14px;margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.paso{border:1px solid #333A42;border-radius:var(--r);padding:20px;background:var(--carbon-2)}
+.paso .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:3px;
+  background:var(--hueso);color:var(--carbon);font-weight:900;font-size:14px;margin-bottom:13px}
+.paso b{display:block;font-size:16px;font-weight:800;margin-bottom:5px;text-transform:uppercase;letter-spacing:.01em}
+.paso p{color:#A9AFB6;font-size:14.5px}
+.foto-wa .btn{margin-top:22px}
+.nota{margin-top:16px;font-size:13px;color:#8F969E;max-width:58ch;border-left:2px solid var(--wa);padding-left:12px}
+@media(min-width:720px){.foto-wa{padding:38px 34px}}
+
+/* ---------- por que ---------- */
+.franja{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.motivos{display:grid;gap:14px;margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.motivo{border-left:3px solid var(--carbon);padding:4px 0 4px 18px}
+.motivo b{display:block;font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:-.005em;margin-bottom:7px}
+.motivo p{color:var(--gris);font-size:14.5px}
+
+/* ---------- opiniones ---------- */
+.ops{display:grid;gap:14px;margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(265px,1fr))}
+.op{border:1px solid var(--linea);border-radius:var(--r);padding:22px;background:#fff}
+.op .estrellas{color:#E0A400;font-size:14px;letter-spacing:.09em;margin-bottom:10px}
+.op p{font-size:15.5px;color:var(--tinta-2);font-weight:500}
+.op cite{display:block;margin-top:12px;font-style:normal;font-size:12.5px;color:var(--gris);font-weight:700;
+  text-transform:uppercase;letter-spacing:.08em}
+
+/* ---------- donde ---------- */
+.donde{display:grid;gap:24px}
+@media(min-width:880px){.donde{grid-template-columns:1fr 1fr;align-items:start}}
+.dato{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--linea);align-items:flex-start}
+.dato:last-child{border-bottom:0}
+.dato svg{width:20px;height:20px;flex:none;color:var(--carbon);margin-top:2px}
+.dato b{display:block;font-size:15.5px;font-weight:800}
+.dato span{display:block;color:var(--gris);font-size:14.5px;margin-top:3px}
+.mapa{border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;min-height:310px}
+.mapa iframe{width:100%;height:100%;min-height:310px;border:0;display:block}
+
+/* ---------- pie ---------- */
+.pie{background:var(--carbon);color:#9AA1A9;padding:36px 0 28px;font-size:14px}
+.pie .caja{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+.pie b{color:var(--hueso);letter-spacing:.02em}
+.pie .firma{font-size:12.5px;color:#767D85}
+.pie .firma a{color:var(--hueso-2);text-decoration:underline}
+
+.flota{position:fixed;right:15px;bottom:15px;z-index:50;box-shadow:0 12px 28px -10px rgba(21,24,28,.6)}
+@media(min-width:900px){.flota{right:24px;bottom:24px}}
+@media(prefers-reduced-motion:no-preference){
+  .rev{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+  .rev.in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg style="display:none">
+  <!-- el isotipo: las siglas LTM en blanco sobre el negro del frente, como estan
+       pintadas en las dos persianas -->
+  <symbol id="iso" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="5" fill="#15181C"/>
+    <text x="32" y="43" text-anchor="middle" font-family="Figtree,sans-serif" font-size="25"
+          font-weight="900" letter-spacing="-.5" fill="#F1EEE8">LTM</text>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2m5.8 14.16c-.24.68-1.42 1.3-1.95 1.34-.5.04-.98.22-3.3-.69-2.78-1.09-4.54-3.94-4.68-4.12-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.6.6.46.24.53.8 1.87.87 2 .07.14.11.29.02.47-.9.18-.14.29-.27.45l-.4.47c-.13.13-.27.28-.12.55.15.27.66 1.09 1.42 1.77.98.87 1.8 1.14 2.07 1.27.27.14.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.87.27.14.45.2.51.31.07.11.07.64-.17 1.32"/></symbol>
+  <symbol id="tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.39 21 3 13.61 3 4.5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></symbol>
+  <symbol id="reloj" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m1 10.6 4 2.3-.9 1.6L11 13V6h2z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27 5.18 3.13-1.37-5.89 4.57-3.96-6.02-.51L12 4.5 9.64 10.04l-6.02.51 4.57 3.96-1.37 5.89z"/></symbol>
+  <!-- butaca de auto -->
+  <symbol id="butaca" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2a3 3 0 0 1 3 3v6.5c0 .83.67 1.5 1.5 1.5H18a3 3 0 0 1 3 3v1a3 3 0 0 1-3 3h-7a7 7 0 0 1-7-7V5a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1v8a5 5 0 0 0 5 5h7a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-6.5A3.5 3.5 0 0 1 8 11.5V5a1 1 0 0 0-1-1M4 21h16v2H4z"/></symbol>
+  <!-- asiento de moto -->
+  <symbol id="asiento-moto" viewBox="0 0 24 24"><path fill="currentColor" d="M3 13c0-2.2 1.8-4 4-4h6.2c1.5 0 2.9.7 3.9 1.8l3.2 3.7c.5.6.7 1.3.7 2.1V17a2 2 0 0 1-2 2h-3.4c-.5 0-.9-.3-1-.8l-.3-1.1a1 1 0 0 0-1-.7H7a4 4 0 0 1-4-4zm4-2a2 2 0 0 0 0 4h6.3c1.2 0 2.3.7 2.8 1.8l.1.2H19v-.4c0-.3-.1-.6-.3-.8l-3.2-3.7c-.6-.7-1.4-1.1-2.3-1.1zM4 20h16v2H4z"/></symbol>
+  <!-- silla de escritorio -->
+  <symbol id="silla" viewBox="0 0 24 24"><path fill="currentColor" d="M8 2h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-3v2h6v2h-6v1.2a3 3 0 1 1-2 0V16H5v-2h6v-2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v6h8V4zm4 15.6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/></symbol>
+  <!-- aguja e hilo, para los arreglos -->
+  <symbol id="aguja" viewBox="0 0 24 24"><path fill="currentColor" d="m20.5 2.1-11 11 1.4 1.4 11-11zM9.8 15.6 8.4 14.2l-1.2 3.6a1 1 0 0 0 1.2 1.3zM6 3c1.7 0 3 1.3 3 3 0 1-.5 1.9-1.3 2.4L5.8 9.7C5.3 10 5 10.6 5 11.2c0 1 .8 1.8 1.8 1.8v2c-2.1 0-3.8-1.7-3.8-3.8 0-1.3.6-2.5 1.7-3.2l1.9-1.3c.3-.2.4-.4.4-.7 0-.6-.4-1-1-1z"/></symbol>
+  <!-- camara, para el paso de la foto -->
+  <symbol id="camara" viewBox="0 0 24 24"><path fill="currentColor" d="M9 3h6l1.5 2H20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.5zm3 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10m0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6"/></symbol>
+  <!-- globo de presupuesto -->
+  <symbol id="precio" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4V5a2 2 0 0 1 2-2zm8.9 3h-1.6v1.1c-1.2.2-2 1-2 2 0 1.3 1 1.9 2.3 2.3 1 .3 1.3.5 1.3.9 0 .4-.4.7-1.1.7-.9 0-1.6-.4-2-.7l-.6 1.4c.5.3 1.2.6 2.1.7V15h1.6v-1.2c1.3-.2 2.1-1 2.1-2.1 0-1.2-.8-1.9-2.3-2.3-1-.3-1.4-.5-1.4-.9 0-.3.3-.6 1-.6.8 0 1.4.3 1.7.5l.6-1.4c-.4-.2-1-.4-1.7-.5z"/></symbol>
+  <!-- calendario, para coordinar -->
+  <symbol id="agenda" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2h10V2h2v2h1a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V2zM4 9v11h16V9zm3 2h4v4H7z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="caja">
+    <a class="marca" href="#">
+      <svg class="iso"><use href="#iso"/></svg>
+      <span>
+        <b>La Tapicería<br>de Morón</b>
+        <small>Yrigoyen 95</small>
+      </span>
+    </a>
+    <a class="btn btn-linea btn-chico solo-gr" href="#que">Qué tapizamos</a>
+    <a class="btn btn-wa" href="https://wa.me/5491165157442" target="_blank" rel="noopener">
+      <svg><use href="#wa"/></svg> WhatsApp
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ portada ============ -->
+<section class="hero">
+  <div class="caja">
+    <div>
+      <span class="rotulo">Av. Hipólito Yrigoyen 95 · Morón</span>
+      <h1>Tapizamos<br>butacas, asientos<br>y <em>sillas</em>.</h1>
+      <p class="bajada">De autos, de motos y de la silla en la que trabajás todo el día. Mandás una foto por WhatsApp y te pasan el presupuesto.</p>
+
+      <div class="sellos">
+        <span class="sello">
+          <svg class="estrella"><use href="#star"/></svg>
+          <b>4,5</b><span>· 104 opiniones en Google</span>
+        </span>
+        <span class="sello">
+          <svg style="color:#4A4F56"><use href="#reloj"/></svg>
+          <b>Abre 9:30</b>
+        </span>
+      </div>
+
+      <div class="acciones">
+        <a class="btn btn-wa" href="https://wa.me/5491165157442" target="_blank" rel="noopener">
+          <svg><use href="#wa"/></svg> Mandá la foto
+        </a>
+        <a class="btn btn-linea" href="#donde">
+          <svg><use href="#pin"/></svg> Cómo llegar
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-foto rev">
+      <img src="img/frente.webp" alt="Frente de La Tapicería de Morón, en Av. Hipólito Yrigoyen 95" width="770" height="532">
+      <span class="pie-foto">El frente sobre Yrigoyen, entre las vías y el centro de Morón.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ que tapizamos ============ -->
+<section id="que">
+  <div class="caja">
+    <span class="rotulo">Qué tapizamos</span>
+    <h2>No es sólo el auto.</h2>
+    <p class="sub">Es el error que más se repite: se cree que una tapicería de autos hace nada más que autos. Por acá pasan motos y sillas todos los días.</p>
+
+    <div class="items">
+      <article class="item rev">
+        <div class="ico"><svg><use href="#butaca"/></svg></div>
+        <h3>Autos</h3>
+        <p>Butacas, asientos traseros, respaldos y apoyabrazos. Es lo que más nombran las opiniones.</p>
+      </article>
+      <article class="item rev">
+        <div class="ico"><svg><use href="#asiento-moto"/></svg></div>
+        <h3>Motos</h3>
+        <p>El asiento de la moto, retapizado y cosido de nuevo. También aparece en las opiniones de Google.</p>
+      </article>
+      <article class="item rev">
+        <div class="ico"><svg><use href="#silla"/></svg></div>
+        <h3>Sillas y sillones</h3>
+        <p>La silla de la computadora, la de gaming, el sillón. Una clienta contó justamente eso en Google.</p>
+      </article>
+      <article class="item rev">
+        <div class="ico"><svg><use href="#aguja"/></svg></div>
+        <h3>Arreglos y detalles</h3>
+        <p>No hace falta rehacer todo. También se viene por un detalle, y se va resuelto.</p>
+      </article>
+    </div>
+
+    <!-- ===== el bloque fuerte: el presupuesto por foto ===== -->
+    <div class="foto-wa rev">
+      <span class="rotulo" style="background:transparent;border-color:#3A4149;color:#C9CED4">Lo que casi nadie sabe</span>
+      <h2>Sacale una foto<br>y mandala.</h2>
+      <p class="sub">No hace falta desarmar el asiento, ni cargar la silla en el auto, ni pasar por el local para saber cuánto sale.</p>
+
+      <div class="pasos">
+        <article class="paso">
+          <span class="n">1</span>
+          <b>La foto</b>
+          <p>Una foto de la butaca, del asiento o de la silla, al WhatsApp del frente.</p>
+        </article>
+        <article class="paso">
+          <span class="n">2</span>
+          <b>El presupuesto</b>
+          <p>Te contestan por ahí mismo con el precio, sin que tengas que moverte.</p>
+        </article>
+        <article class="paso">
+          <span class="n">3</span>
+          <b>El día</b>
+          <p>Si te sirve, se coordina por el mismo chat cuándo lo llevás.</p>
+        </article>
+      </div>
+
+      <a class="btn btn-wa" href="https://wa.me/5491165157442" target="_blank" rel="noopener">
+        <svg><use href="#wa"/></svg> Mandar la foto por WhatsApp
+      </a>
+
+      <p class="nota">Esto no está escrito en ningún lado: lo cuenta una clienta en una opinión de Google, que mandó una foto de la silla de su computadora y recibió el presupuesto por WhatsApp.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ por que aca ============ -->
+<section class="franja">
+  <div class="caja">
+    <span class="rotulo">Por qué acá</span>
+    <h2>104 opiniones,<br>y siempre las mismas<br>tres palabras.</h2>
+    <p class="sub">Contadas una por una sobre las opiniones de Google de La Tapicería de Morón.</p>
+
+    <div class="motivos">
+      <article class="motivo rev">
+        <b>El trabajo</b>
+        <p>La palabra que más aparece: 16 veces en 104 opiniones. “Quedó impecable”, “un muy buen trabajo”.</p>
+      </article>
+      <article class="motivo rev">
+        <b>El precio</b>
+        <p>La segunda, con 10 apariciones. Es de lo que más se habla cuando se sale conforme de un taller.</p>
+      </article>
+      <article class="motivo rev">
+        <b>La paciencia</b>
+        <p>“Muy buena atención y paciencia”. Y el dueño contesta las opiniones de Google una por una: está del otro lado.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ opiniones ============ -->
+<section>
+  <div class="caja">
+    <span class="rotulo">Opiniones de Google</span>
+    <h2>4,5 sobre 104.</h2>
+    <p class="sub">Textuales, de la ficha de Google de La Tapicería de Morón.</p>
+
+    <div class="ops">
+      <article class="op rev">
+        <div class="estrellas">★★★★★</div>
+        <p>“Excelente servicio y atención, el asiento de mi Gol Trend quedó impecable.”</p>
+        <cite>Opinión en Google</cite>
+      </article>
+      <article class="op rev">
+        <div class="estrellas">★★★★★</div>
+        <p>“Fui por un detalle y realizó un muy buen trabajo, y tuve una excelente atención.”</p>
+        <cite>Opinión en Google</cite>
+      </article>
+      <article class="op rev">
+        <div class="estrellas">★★★★★</div>
+        <p>“Muy buena atención y paciencia, lo que venden buena calidad.”</p>
+        <cite>Opinión en Google</cite>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ donde ============ -->
+<section class="franja" id="donde">
+  <div class="caja">
+    <span class="rotulo">Dónde estamos</span>
+    <h2>Yrigoyen 95,<br>Morón.</h2>
+
+    <div class="donde" style="margin-top:26px">
+      <div>
+        <div class="dato">
+          <svg><use href="#pin"/></svg>
+          <span><b>Av. Hipólito Yrigoyen 95</b><span>B1708DLW Morón, Provincia de Buenos Aires</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#reloj"/></svg>
+          <span><b>Abre a las 9:30</b><span>Escribí antes por WhatsApp y coordinás</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#wa"/></svg>
+          <span><b><a href="https://wa.me/5491165157442" target="_blank" rel="noopener">11 6515-7442</a></b><span>El mismo número que está pintado en el frente</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#camara"/></svg>
+          <span><b>Presupuesto por foto</b><span>Mandás la foto y te contestan con el precio</span></span>
+        </div>
+      </div>
+
+      <div class="mapa rev">
+        <iframe title="Mapa de La Tapicería de Morón, Av. Hipólito Yrigoyen 95, Morón" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Av.%20Hip%C3%B3lito%20Yrigoyen%2095,%20Mor%C3%B3n&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="caja">
+    <div>
+      <b>LA TAPICERÍA DE MORÓN · LTM</b><br>
+      Av. Hipólito Yrigoyen 95, Morón · 11 6515-7442
+    </div>
+    <div class="firma">
+      Demo hecha por <a href="https://tunegocioenlasredes.com.ar" target="_blank" rel="noopener">Tu Negocio En Las Redes</a>.<br>
+      Página de muestra, sin publicar.
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn-wa flota" href="https://wa.me/5491165157442" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a La Tapicería de Morón">
+  <svg><use href="#wa"/></svg> WhatsApp
+</a>
+
+<script>
+/* Aparecer al scrollear. NO se usa IntersectionObserver a proposito: con un
+   scroll rapido las secciones pasan entre frames, no se registran y quedan
+   invisibles para siempre. Ademas hay una red de seguridad a los 4 segundos. */
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.rev'));
+  if (!els.length) return;
+  var pedido = false;
+  function revisar() {
+    pedido = false;
+    var alto = window.innerHeight;
+    for (var i = els.length - 1; i >= 0; i--) {
+      if (els[i].getBoundingClientRect().top < alto - 60) {
+        els[i].classList.add('in');
+        els.splice(i, 1);
+      }
+    }
+  }
+  function pedir() { if (!pedido) { pedido = true; requestAnimationFrame(revisar); } }
+  addEventListener('scroll', pedir, { passive: true });
+  addEventListener('resize', pedir, { passive: true });
+  revisar();
+  setTimeout(function () {
+    document.querySelectorAll('.rev').forEach(function (e) { e.classList.add('in'); });
+  }, 4000);
+})();
+</script>
+</body>
+</html>
